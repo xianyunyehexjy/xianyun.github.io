@@ -18,18 +18,13 @@ module.exports = {
     // })();
     // `]
   ],
-  base: '/', // 这是部署到github相关的配置
+  base: '/xianyun.github.io/', // 这是部署到github相关的配置
   markdown: {
     lineNumbers: false // 代码块显示行号
   },
   themeConfig: {
     nav:[ // 导航栏配置
-      // {text: 'Python', link: '/Python/' },
       {text: 'Vue', link: '/Vue/' } ,
-  
-      // {text: 'Linux', link: '/Linux/' },
-      // {text: 'Other', link: '/Other/' },
-      // {text: 'InfiniteSplitTable', link: '/InfiniteSplitTable' },
       {text: 'Pictures', link: '/Pictures/' },
       {text: 'GitHub', link: 'https://github.com/xianyunyehexjy'}      
     ],
