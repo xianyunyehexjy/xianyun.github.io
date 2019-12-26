@@ -18,7 +18,7 @@ module.exports = {
     })();
     `]
   ],
-  base: '/', // 这是部署到github相关的配置
+  base: '/xianyun.github.io.git/', // 这是部署到github相关的配置
   markdown: {
     lineNumbers: false // 代码块显示行号
   },
