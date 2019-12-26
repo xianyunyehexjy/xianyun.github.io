@@ -17,7 +17,7 @@ jobs:
 #     - run: cp CNAME docs/.vuepress/dist/
     
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v2.5.0
+      uses: docker://alpine:3.8
       env:
         ACTIONS_DEPLOY_KEY: ${{secrets.key}}
         PUBLISH_BRANCH: gh-pages
