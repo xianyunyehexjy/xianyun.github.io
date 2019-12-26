@@ -6,17 +6,17 @@ module.exports = {
     // meta
     ["meta", {name: "robots", content: "all"}],
     ["meta", {name: "author", content: "秦羽"}],
-    ["meta", {name: "keywords", content: "Python笔记, Vue笔记, Linux笔记"}],
+    ["meta", {name: "keywords", content: "Python笔记, Vue笔记, Linux笔记"}]
 
-    ['script', {}, `
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?78211cc0bb0086ea217533a8f283d678";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-    `]
+    // ,['script', {}, `
+    // var _hmt = _hmt || [];
+    // (function() {
+    //   var hm = document.createElement("script");
+    //   hm.src = "https://hm.baidu.com/hm.js?78211cc0bb0086ea217533a8f283d678";
+    //   var s = document.getElementsByTagName("script")[0]; 
+    //   s.parentNode.insertBefore(hm, s);
+    // })();
+    // `]
   ],
   base: '/xianyun.github.io.git/', // 这是部署到github相关的配置
   markdown: {
