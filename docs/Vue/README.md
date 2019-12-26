@@ -38,9 +38,9 @@ this.$refs.myinput.$refs.input.focus();
 ```
 
 ## Vue封装点击编辑组件
-- 演示
+<!-- - 演示
 
-![演示](/images/InputClickDemo.gif)
+![演示](/images/InputClickDemo.gif) -->
 
 - 使用
 
