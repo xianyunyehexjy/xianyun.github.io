@@ -1,5 +1,5 @@
 
-import InfiniteSplitTableDemo from './components/InfiniteSplitTableDemo'
+ import InfiniteSplitTableDemo from './components/InfiniteSplitTableDemo'
 
 export default ({
     Vue, // VuePress 正在使用的 Vue 构造函数

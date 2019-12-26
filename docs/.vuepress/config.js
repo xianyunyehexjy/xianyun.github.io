@@ -25,6 +25,7 @@ module.exports = {
   themeConfig: {
     nav:[ // 导航栏配置
       {text: 'Vue', link: '/Vue/' } ,
+      // {text: 'InfiniteSplitTable', link: '/InfiniteSplitTable' },
       {text: 'Pictures', link: '/Pictures/' },
       {text: 'GitHub', link: 'https://github.com/xianyunyehexjy'}      
     ],
