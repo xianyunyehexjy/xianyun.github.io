@@ -1,6 +1,6 @@
 module.exports = {
   title: '许剑煜的博客',
-  description: '本是青灯不归客，却因浊酒恋红尘。星空不问赶路人，岁月不负有心人。',
+  description: '本是青灯不归客，却因浊酒恋红尘。<br>星空不问赶路人，岁月不负有心人。',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', { rel: 'icon', href: '/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
     // meta
