@@ -24,7 +24,7 @@
   .box {
     position: absolute;
     display: inline-block;
-    left:5%;
+    right:1%;
     transform: translateX(-50%);
     top:57px;
   }
