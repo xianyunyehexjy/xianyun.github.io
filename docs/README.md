@@ -2,6 +2,7 @@
 home: true
 actionText: 快速上手 →
 heroText: 许剑煜的前端记录
+heroImage: /logo.jpg
 tagline: 本是青灯不归客，却因浊酒恋红尘。
 # 星空不问赶路人，岁月不负有心人。
 actionLink: /Vue/
