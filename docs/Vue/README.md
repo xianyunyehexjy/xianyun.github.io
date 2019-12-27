@@ -263,4 +263,3 @@ let routeData=this.$router.resolve({
 });
 window.open(routeData.href,'_blank');
 ```
-<Aplayer></Aplayer>
