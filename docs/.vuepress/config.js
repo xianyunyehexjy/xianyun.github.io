@@ -7,16 +7,15 @@ module.exports = {
     ["meta", {name: "robots", content: "all"}],
     ["meta", {name: "author", content: "许剑煜"}],
     ["meta", {name: "keywords", content: "Vue笔记"}]
-
-    // ,['script', {}, `
-    // var _hmt = _hmt || [];
-    // (function() {
-    //   var hm = document.createElement("script");
-    //   hm.src = "https://hm.baidu.com/hm.js?78211cc0bb0086ea217533a8f283d678";
-    //   var s = document.getElementsByTagName("script")[0]; 
-    //   s.parentNode.insertBefore(hm, s);
-    // })();
-    // `]
+    ,['script', {}, `
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?78211cc0bb0086ea217533a8f283d678";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    `]
   ],
   base: '/xianyun.github.io/', // 这是部署到github相关的配置
   markdown: {
@@ -25,7 +24,6 @@ module.exports = {
   themeConfig: {
     nav:[ // 导航栏配置
       {text: 'Vue', link: '/Vue/' } ,
-      // {text: 'InfiniteSplitTable', link: '/InfiniteSplitTable' },
       {text: 'Pictures', link: '/Pictures/' },
       {text: 'GitHub', link: 'https://github.com/xianyunyehexjy'}      
     ],
