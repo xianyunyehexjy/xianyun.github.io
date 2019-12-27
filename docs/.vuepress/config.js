@@ -10,7 +10,7 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: '/live2dModels/live2d/css/common.css' }],  //引入css
     ['script', { type: 'text/javascript', src: '/live2dModels/live2d/js/live2d.js' }],  //引入live2d
     ['script', { type: 'text/javascript', src: '/live2dModels/live2d/js/init.js' }],  //引入live2d初始化脚本,async:'async'
-    // ,['script', {}, `
+    // ['script', {}, `
     // var _hmt = _hmt || [];
     // (function() {
     //   var hm = document.createElement("script");
@@ -50,26 +50,7 @@ module.exports = {
   },
   plugins: [
     // 'vuepress-plugin-baidu-autopush',
-    '@vuepress/pwa',
-    'vuepress-plugin-helper-live2d', {
-      live2d: {
-        enable: true,
-        model: 'hibiki',
-        display: {
-          position: "right", // 显示位置：left/right(default: 'right')
-          width: 135, // 模型的长度(default: 135)
-          height: 300, // 模型的高度(default: 300)
-          hOffset: 65, //  水平偏移(default: 65)
-          vOffset: 0 //  垂直偏移(default: 0)
-        },
-        mobile: {
-          show: false // 是否在移动设备上显示(default: false)
-        },
-        react: {
-          opacity: 0.8 // 模型透明度(default: 0.8)
-        }
-      }
-    }
+    '@vuepress/pwa'
   ]
 };
  

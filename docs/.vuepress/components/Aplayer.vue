@@ -1,13 +1,12 @@
 <template>
   <div>
     <div id="aplayer"></div>
-    
   </div>
 </template>
 <script>
-  import 'APlayer/dist/APlayer.min.css';
-  import APlayer from 'APlayer';
+
   export default{
+    
     mounted() {
       const options =
           {
