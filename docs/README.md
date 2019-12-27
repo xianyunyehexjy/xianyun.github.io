@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.jpg
+heroImage: /xianyun.github.io/logo.jpg
 actionText: 快速上手 →
 heroText: 许剑煜的前端记录
 tagline: 本是青灯不归客，却因浊酒恋红尘。
