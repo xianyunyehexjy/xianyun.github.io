@@ -12,7 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - run: npm ci
-    - run: npm install
     - run: npm install vuepress
     - run: npm run build
 #     - run: cp CNAME docs/.vuepress/dist/
