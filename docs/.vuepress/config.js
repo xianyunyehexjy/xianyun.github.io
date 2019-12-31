@@ -20,7 +20,8 @@ module.exports = {
     // })();
     // `]
   ],
-  base: '/xianyun.github.io/', // 这是部署到github相关的配置
+  ///base: '/xianyun.github.io/', // 这是部署到github相关的配置
+  base:process.env.NODE_ENV === 'production' ? `//cdn.jsdelivr.net/gh/xianyunyehexjy/xianyun.github.io/` : '/xianyun.github.io/',
   markdown: {
     lineNumbers: false // 代码块显示行号
   },
