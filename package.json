@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "easy-typer-js": "^1.1.0",
     "v-jsoneditor": "^1.2.3"
   },
   "devDependencies": {
