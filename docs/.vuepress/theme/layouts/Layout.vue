@@ -52,7 +52,9 @@ import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
 import { resolveSidebarItems } from '../util'
-
+import Card from '@theme/components/Card'
+// import type from '@theme/components/type'
+import myPlay from '@theme/components/APlayer'
 export default {
   name: 'Layout',
 
@@ -60,7 +62,10 @@ export default {
     Home,
     Page,
     Sidebar,
-    Navbar
+    Navbar,
+    Card,
+    // type,
+    myPlay
   },
 
   data () {
