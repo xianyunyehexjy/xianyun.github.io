@@ -1,4 +1,4 @@
-// import Card from './components/Card'
+import Card from './components/Card'
 import type from './components/type'
 // import myPlay from './components/Aplayer.vue'
 export default ({
@@ -8,7 +8,7 @@ export default ({
     siteData // 站点元数据
   }) => {
     // ...做一些其他的应用级别的优化
-    // Vue.component('Card',Card)
+    Vue.component('Card',Card)
     Vue.component('type',type)
     // Vue.component('myPlay',myPlay)
   }
