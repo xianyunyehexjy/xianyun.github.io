@@ -13,12 +13,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@moefe/vue-aplayer": "^2.0.0-beta.5",
+    "axios": "^0.19.1",
     "easy-typer-js": "^1.1.0",
-    "v-jsoneditor": "^1.2.3"
+    "v-jsoneditor": "^1.2.3",
+    "vuepress-plugin-medium-zoom": "^1.1.8"
   },
   "devDependencies": {
-    "@vuepress/plugin-pwa": "^1.2.0",
-    "@vuepress/plugin-register-components": "^1.2.0",
-    "vuepress-plugin-baidu-autopush": "^1.0.1"
+    "@vuepress/plugin-pwa": "^1.2.0"
   }
 }
