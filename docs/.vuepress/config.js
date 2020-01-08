@@ -23,8 +23,7 @@ module.exports = {
           text: '分类',
           ariaLabel: '分类',
           items: [
-              { text: '文章', link: '/Vue/' },
-              { text: '琐碎', link: '/Other/' },
+              { text: '文章', link: '/Vue/' }
           ]
       },
       {text: '图片', link: '/Pictures/' },
