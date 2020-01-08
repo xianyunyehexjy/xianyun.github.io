@@ -10,4 +10,5 @@ heroText: 许剑煜的前端记录
 </header>
 
 
+<myPlay/>
  
