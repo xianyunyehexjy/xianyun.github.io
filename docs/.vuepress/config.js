@@ -15,7 +15,6 @@ module.exports = {
     lineNumbers: false // 代码块显示行号
   },
   themeConfig: {
-    extend: '@vuepress/theme-default',
     logo: '/logo.jpg',
     lastUpdated: 'lastUpdate', // string | boolean
     nav: [
