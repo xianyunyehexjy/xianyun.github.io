@@ -54,7 +54,7 @@ import Sidebar from '@theme/components/Sidebar.vue'
 import { resolveSidebarItems } from '../util'
 import Card from '@theme/components/Card'
 // import type from '@theme/components/type'
-import myPlay from '@theme/components/APlayer'
+import myPlay from './../components/Aplayer'
 export default {
   name: 'Layout',
 
