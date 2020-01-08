@@ -42,7 +42,7 @@
         <slot name="page-bottom" />
       </template>
     </Page>
-    <APlayer/>
+    <myPlay/>
   </div>
 </template>
 
