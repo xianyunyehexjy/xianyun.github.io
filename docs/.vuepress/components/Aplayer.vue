@@ -8,7 +8,6 @@
   import Vue from 'vue';
   import axios from 'axios'
   import APlayer from '@moefe/vue-aplayer';
-
   Vue.use(APlayer);
   export default{
     data(){

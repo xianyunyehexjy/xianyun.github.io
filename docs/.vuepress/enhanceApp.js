@@ -1,6 +1,6 @@
 import Card from './components/Card'
 import type from './components/type'
-import myPlay from './components/APlayer'
+import myPlay from './components/Aplayer.vue'
 export default ({
     Vue, // VuePress 正在使用的 Vue 构造函数
     options, // 附加到根实例的一些选项
