@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "874f8276bf7fa1a6f87bf94342e32ba3"
+    "revision": "3eefc18021e173bff5b83ce1f0af4bd2"
   },
   {
-    "url": "assets/css/0.styles.c3f16c1d.css",
-    "revision": "368e022c2181eed9610e79be6d14de13"
+    "url": "assets/css/0.styles.2f10c442.css",
+    "revision": "a7763fc10db4e7f720491a0bc3a4c23d"
   },
   {
     "url": "assets/img/search.83621669.svg",
@@ -78,8 +78,8 @@ self.__precacheManifest = [
     "revision": "80d66952193c31f6a0808c4e699f2d75"
   },
   {
-    "url": "assets/js/app.fd3d5534.js",
-    "revision": "3df86ba2e42a3a824e63b894eb98d03f"
+    "url": "assets/js/app.359c67c5.js",
+    "revision": "698c65dd4c13a5e057a38839ec3db674"
   },
   {
     "url": "css/APlayer.min.css",
@@ -111,7 +111,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "7b5785bf71821a71e122b744f0a5534b"
+    "revision": "b9a4ae1ebb80104ebec58ddaa90976a6"
   },
   {
     "url": "js/APlayer.min.js",
@@ -883,15 +883,15 @@ self.__precacheManifest = [
   },
   {
     "url": "Other/index.html",
-    "revision": "bc5ea75604c0f05dee44926e1b7eb38b"
+    "revision": "ae1326ab9e7dbe3e0026b08f5359522e"
   },
   {
     "url": "Pictures/index.html",
-    "revision": "847efc08b94bf67b6a35d995512a823e"
+    "revision": "a2f04045b2a8af44be1744874e2380b0"
   },
   {
     "url": "Vue/index.html",
-    "revision": "c893c5cf115eaf8c8cd16a1c6e778205"
+    "revision": "20d06d036bc2ae6f69efbc8a82499c5b"
   },
   {
     "url": "wallpaper/1.jpg",
