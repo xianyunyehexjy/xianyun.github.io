@@ -7,11 +7,10 @@ module.exports = {
     ["meta", {name: "author", content: "许剑煜"}],
     ["meta", {name: "keywords", content: "Vue笔记"}],
     ['link', { rel: 'stylesheet', href: '/live2dModels/live2d/css/common.css' }],  //引入css
-    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css' }],  //引入css
+    ['link', { rel: 'stylesheet', href: '/css/APlayer.min.css' }],  //引入css
     ['script', { type: 'text/javascript', src: '/live2dModels/live2d/js/live2d.js' }],  //引入live2d
     ['script', { type: 'text/javascript', src: '/live2dModels/live2d/js/init.js' }] , //引入live2d初始化脚本,async:'async'
-    ['script', { type: 'text/javascript', src: 'https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js' }] ,
-    // ['script', { type: 'text/javascript', src: 'https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js' }] ,
+    ['script', { type: 'text/javascript', src: '/js/APlayer.min.js' }] ,
   ],
   base: '/xianyun.github.io/', // 这是部署到github相关的配置
   markdown: {
@@ -49,6 +48,7 @@ module.exports = {
       
   ],
   globalUIComponents: [
-    'player'
+    'player',
+    'card'
   ]
 };

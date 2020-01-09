@@ -54,7 +54,7 @@
                 artist: element.artist || element.author || "Audio artist",
                 url: element.url,
                 cover: element.cover || element.pic,
-                lrc: element.lrc || element.lyric || "",
+                lrc: element.lrc|| "",
                 type:element.type || "auto"
               })
             });
@@ -63,9 +63,12 @@
             document.body.append(c)
             const ap = new APlayer({
               container: c,
+              lrcType: 3,
+              autoplay:true,
+              theme: '#e9e9e9',
               fixed: true,
               audio: list
-            });
+            });  
         })
     }
   }
