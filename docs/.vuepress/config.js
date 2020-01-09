@@ -22,8 +22,8 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       {
-          text: '分类',
-          ariaLabel: '分类',
+          text: '归档',
+          ariaLabel: '归档',
           items: [
               { text: '文章', link: '/Vue/' },
               { text: '琐碎', link: '/Other/' },
