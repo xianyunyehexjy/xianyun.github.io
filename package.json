@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@moefe/vue-aplayer": "^2.0.0-beta.5",
+    "aplayer": "^1.10.1",
     "axios": "^0.19.1",
     "easy-typer-js": "^1.1.0",
     "v-jsoneditor": "^1.2.3",

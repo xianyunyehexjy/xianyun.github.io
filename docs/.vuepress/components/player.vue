@@ -1,14 +1,16 @@
 <template>
   <div v-if="flag">
-    <aplayer :audio="audio" :lrcType="3" fixed />
+   <!-- <aplayer :audio="audio" :lrcType="3" fixed  />  -->
+   <!-- <meting-js
+    server="netease"
+    type="playlist"
+    id="60198">
+  </meting-js> -->
   </div>
 </template>
-
 <script>
-  import Vue from 'vue';
-  import axios from 'axios'
-  import APlayer from '@moefe/vue-aplayer';
-  Vue.use(APlayer);
+  // import 'APlayer/dist/APlayer.min.css';
+  // import APlayer from 'APlayer';
   export default{
     data(){
       return {
@@ -39,17 +41,32 @@
       }
     },
     mounted() {
-      this.init()
-    },
-    methods:{
-      async init () {
-        //这边是引入了axios然后使用的get请求的一个音乐列表接口
-        const getMusicList = url => axios.get(url);
-        let url = 'https://api.i-meto.com/meting/api?server=netease&type=playlist&id=2200340584&r=random';
-        let data = await getMusicList(url);
-        this.audio=data.data
-        this.flag = true; 
-      }
+      fetch('https://api.i-meto.com/meting/api?server=netease&type=playlist&id=2200340584&r=random')
+        .then(res => {
+            return res.json()
+        })
+        .then((data) => {
+            this.audio=data 
+            let list=[]
+            this.audio.forEach(element => {
+              this.list.push({
+                name:element.name || element.title || "Audio name",
+                artist: element.artist || element.author || "Audio artist",
+                url: element.url,
+                cover: element.cover || element.pic,
+                lrc: element.lrc || element.lyric || "",
+                type:element.type || "auto"
+              })
+            });
+            this.flag = true; 
+            let c = document.createElement("div")
+            document.body.append(c)
+            const ap = new APlayer({
+              container: c,
+              fixed: true,
+              audio: this.list
+            });
+        })
     }
   }
 </script>
