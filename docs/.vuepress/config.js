@@ -29,7 +29,7 @@ module.exports = {
               { text: '琐碎', link: '/Other/' },
           ]
       },
-      {text: '图片', link: '/Pictures/' },
+      {text: '图集', link: '/Pictures/' },
       {text: 'GitHub', link: 'https://github.com/xianyunyehexjy'}     
   ],
     sidebar: 'auto', // 侧边栏配置
