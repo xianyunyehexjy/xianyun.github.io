@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "3038cee2928cde10e2a52beb6887d575"
+    "revision": "7ebf0cc93f248be182ecdfa274b0d530"
   },
   {
     "url": "assets/css/0.styles.ec02c2c6.css",
@@ -54,8 +54,8 @@ self.__precacheManifest = [
     "revision": "6eba1696ed3e84b575c8820184a69f2f"
   },
   {
-    "url": "assets/js/4.b6e5623a.js",
-    "revision": "e3f710586a0ef9ad111f56498d99e174"
+    "url": "assets/js/4.97b17e48.js",
+    "revision": "e734d854e7c90e88dcd2087718946e42"
   },
   {
     "url": "assets/js/5.7aa4285e.js",
@@ -70,16 +70,16 @@ self.__precacheManifest = [
     "revision": "c6ebff8510ecfa6fccfec370086771ed"
   },
   {
-    "url": "assets/js/8.6dcd3427.js",
-    "revision": "6ed9f01432e983551e45bf90358a826c"
+    "url": "assets/js/8.2e2a3d0a.js",
+    "revision": "02f27d85c6c0c13477ddf4cd9242aa89"
   },
   {
-    "url": "assets/js/9.e48368eb.js",
-    "revision": "3b74f4ad16b11647f3908b66e763e195"
+    "url": "assets/js/9.180889f3.js",
+    "revision": "34f29765ea530276f72bf6d06a248029"
   },
   {
-    "url": "assets/js/app.feafa217.js",
-    "revision": "a8e034cfeaf8d77bc852f940d16bf389"
+    "url": "assets/js/app.270e3a36.js",
+    "revision": "d881135dd2e40f5e56ca973148152709"
   },
   {
     "url": "img/bot.png",
@@ -107,7 +107,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "5546f3a6355137fa6376fc2573ea7fb6"
+    "revision": "dfd70c7f594dd8d7ec619e2bc80dace0"
   },
   {
     "url": "live2dModels/demo.html",
@@ -875,15 +875,15 @@ self.__precacheManifest = [
   },
   {
     "url": "Other/index.html",
-    "revision": "cf44e9118ddc022960e8802d96cf702f"
+    "revision": "1d95822945b642e1a2e697f298fbfa8a"
   },
   {
     "url": "Pictures/index.html",
-    "revision": "ab1fbfaa998146b2cfce63a53c2158f8"
+    "revision": "fa6d7475ef70f53ad1a58f5618980673"
   },
   {
     "url": "Vue/index.html",
-    "revision": "bd79d8ba0103edd6e764effcca19e7c5"
+    "revision": "d2a4b3beba12a103a0c5b8c5255b7f18"
   },
   {
     "url": "wallpaper/1.jpg",
