@@ -1,5 +1,6 @@
 import Card from './components/Card'
 import type from './components/type'
+import heart from './components/heart'
 // import myPlay from './components/Aplayer.vue'
 export default ({
     Vue, // VuePress 正在使用的 Vue 构造函数
@@ -10,5 +11,6 @@ export default ({
     // ...做一些其他的应用级别的优化
     Vue.component('Card',Card)
     Vue.component('type',type)
+    Vue.component('heart',heart)
     // Vue.component('myPlay',myPlay)
   }
