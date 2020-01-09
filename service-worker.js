@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "36e42167f7bf413d353b8e205520541e"
+    "revision": "89be1cb9fbd120b9c7c05c537cb838e9"
   },
   {
     "url": "assets/css/0.styles.4dc87fec.css",
@@ -78,8 +78,8 @@ self.__precacheManifest = [
     "revision": "555a829722857473b19fe0d2d0f698f7"
   },
   {
-    "url": "assets/js/app.55d46505.js",
-    "revision": "ecb07c834b030be6fedc6e87260f44f2"
+    "url": "assets/js/app.8d9a1d50.js",
+    "revision": "3bc2e2926d17f0e9890e9bb4f1d2086c"
   },
   {
     "url": "css/APlayer.min.css",
@@ -111,7 +111,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "19da501bba4383d769bf0cf564b3d960"
+    "revision": "3192f7089af419c29c85fb28eca46f94"
   },
   {
     "url": "js/APlayer.min.js",
@@ -883,15 +883,15 @@ self.__precacheManifest = [
   },
   {
     "url": "Other/index.html",
-    "revision": "bb70efcf40d3af351546ccc104279a12"
+    "revision": "4c76ea92bd603f032a8ae8acac6f7301"
   },
   {
     "url": "Pictures/index.html",
-    "revision": "61a820b8797337b757683be61a51c631"
+    "revision": "f7a038413fe90ca55697d6177810b2f9"
   },
   {
     "url": "Vue/index.html",
-    "revision": "440ba343804a73a6ca8592b4c38d1185"
+    "revision": "76278e64d61ee9e37f0a6547e3b445d5"
   },
   {
     "url": "wallpaper/1.jpg",
