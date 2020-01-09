@@ -1,7 +1,6 @@
 <template>
   <div id="content">
     <p>只愿君心似我心，定不负相思意。</p>
-    <!-- <canvas id="canvas"></canvas> -->
   </div>
 </template>
 <script>
