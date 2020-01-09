@@ -49,7 +49,7 @@
             this.audio=data 
             let list=[]
             this.audio.forEach(element => {
-              this.list.push({
+              list.push({
                 name:element.name || element.title || "Audio name",
                 artist: element.artist || element.author || "Audio artist",
                 url: element.url,
@@ -64,7 +64,7 @@
             const ap = new APlayer({
               container: c,
               fixed: true,
-              audio: this.list
+              audio: list
             });
         })
     }
