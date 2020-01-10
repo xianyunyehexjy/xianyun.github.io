@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "ed6942584d03627cc785740dc413caf8"
+    "revision": "aea53f4c5e99c08e6d375ef27e3d95b1"
   },
   {
     "url": "assets/css/0.styles.4dc87fec.css",
@@ -38,8 +38,8 @@ self.__precacheManifest = [
     "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
-    "url": "assets/js/10.24f0626b.js",
-    "revision": "9b6b17fc8c5e657a097e35482d29e812"
+    "url": "assets/js/10.525c4d96.js",
+    "revision": "0ce0c8e7ebc5edcf3316289d2bd27d40"
   },
   {
     "url": "assets/js/11.82387b6b.js",
@@ -50,8 +50,8 @@ self.__precacheManifest = [
     "revision": "c6623678cb7e2f96be35237d651151e1"
   },
   {
-    "url": "assets/js/3.ad432ca4.js",
-    "revision": "06d0f9f29ce64bfe36c4046e31d41804"
+    "url": "assets/js/3.6a267ff7.js",
+    "revision": "3c16a5773cbd98fd5ea93e21498d12a2"
   },
   {
     "url": "assets/js/4.98349556.js",
@@ -78,8 +78,8 @@ self.__precacheManifest = [
     "revision": "2546dafd7907afa7eec6d9500a358074"
   },
   {
-    "url": "assets/js/app.78bf8333.js",
-    "revision": "2c9ec2603a4d1998dcb130c42e79223c"
+    "url": "assets/js/app.129999b6.js",
+    "revision": "b1c7839d008f3a8846987f4a0edc9f1a"
   },
   {
     "url": "css/APlayer.min.css",
@@ -111,7 +111,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "bf308f2eea7cc497e16eba6279151fdf"
+    "revision": "308377ef196874e76bd57cf7d6383fe7"
   },
   {
     "url": "js/APlayer.min.js",
@@ -883,15 +883,15 @@ self.__precacheManifest = [
   },
   {
     "url": "Other/index.html",
-    "revision": "16b2d4e9123336eef3b815ef805a6651"
+    "revision": "e015fc5453cd8c7b8b50d6add01e4336"
   },
   {
     "url": "Pictures/index.html",
-    "revision": "74cd5acdfbad5396cce4a2b679a47de5"
+    "revision": "00aff9720a858a42c344c7335f140ae4"
   },
   {
     "url": "Vue/index.html",
-    "revision": "2dc2674d4f73f6945679449e6fc75665"
+    "revision": "713112577dcce5dd48e36812f8a6b684"
   },
   {
     "url": "wallpaper/1.jpg",
