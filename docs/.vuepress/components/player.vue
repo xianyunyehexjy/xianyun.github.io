@@ -64,7 +64,7 @@
             const ap = new APlayer({
               container: c,
               lrcType: 3,
-              autoplay:true,
+              autoplay:false,
               theme: '#e9e9e9',
               fixed: true,
               audio: list
