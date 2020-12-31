@@ -39,7 +39,7 @@ module.exports = {
 				],
 			},
 			{ text: '图集', link: '/Pictures/' },
-			{ text: '新年快乐', link: '/Year/' },
+			{ text: '新年快乐1', link: '/Year/' },
 			{ text: 'GitHub', link: 'https://github.com/xianyunyehexjy' },
 		],
 		sidebar: 'auto', // 侧边栏配置
