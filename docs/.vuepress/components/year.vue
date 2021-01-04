@@ -1,14 +1,12 @@
 <template>
 	<div class="content">
-		<div class="App">
-			<div class="snow" v-for="item in list"></div>
-			<div class="text">Happy New Year!</div>
-			<!-- <div class="btn-container">
+		<div class="snow" v-for="item in list"></div>
+		<div class="text">Happy New Year!</div>
+		<!-- <div class="btn-container">
 				<a href="https://ftopia.cn" target="_blank" rel="noreferrer">
 					<div class="gradient-heart-shape"></div>
 				</a>
 			</div> -->
-		</div>
 	</div>
 </template>
 <script>
@@ -26,19 +24,15 @@ export default {
 	},
 };
 </script>
-<style lang="stylus">
-body {
-  height: 100vh;
-  background: radial-gradient(ellipse at bottom,#12171d 0,#020d44 100%);
-  overflow: hidden;
-  -webkit-filter: drop-shadow(0 0 10px #fff);
-  filter: drop-shadow(0 0 10px #fff)
-}
-
+<style lang="stylus" scoped>
 .content {
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom,#12171d 0,#020d44 100%) !important;
   text-align: center;
   font-family: "Kaushan Script",cursive;
-  filter: drop-shadow(0 0 10px #fff);
+  -webkit-filter: drop-shadow(0 0 10px #fff);
+  filter: drop-shadow(0 0 10px #fff)
 }
 
 @font-face {
@@ -63,7 +57,9 @@ body {
 .text {
   color: #fff;
   font-size: 4em;
-  font-family: Kaushan Script
+  font-family: Kaushan Script;
+  filter: drop-shadow(0 0 10px #fff);
+  -webkit-filter: drop-shadow(0 0 10px #fff);
 }
 
 .btn-container {
@@ -84,7 +80,9 @@ body {
     background-image: linear-gradient(180deg,#edcf6a,#fbe98d);
     box-shadow: 0 0 20px rgba(0,0,0,.8);
     opacity: .7;
-    transform: rotate(45deg)
+    transform: rotate(45deg);
+    filter: drop-shadow(0 0 10px #fff);
+    -webkit-filter: drop-shadow(0 0 10px #fff);
 }
 
 
