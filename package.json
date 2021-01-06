@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.1",
+    "axios": "^0.21.1",
     "easy-typer-js": "^1.1.0",
     "v-jsoneditor": "^1.2.3",
     "vuepress-plugin-medium-zoom": "^1.1.8"
