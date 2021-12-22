@@ -1,10 +1,8 @@
-<template>	
+<template>
   <div style="text-align:center;font-size:25px;font-weight:300;">
     {{ obj.output }}
     <span class="typed-cursor">|</span>
-    <p class="description">
-    「{{creator||'许剑煜'}}」  
-    </p>
+    <p class="description">「{{ creator || '许剑煜' }}」</p>
   </div>
 </template>
 <script>
@@ -22,25 +20,25 @@ export default {
         backSpeed: 60,
         sentencePause: false
       },
-      creator:'许剑煜'
+      creator: '许剑煜'
     }
   },
   mounted() {
-     this.init()
+    this.init()
   },
   methods: {
     init() {
       this.fetchData()
     },
     fetchData() {
-        // 一言Api进行打字机循环输出效果
+      // 一言Api进行打字机循环输出效果
       fetch('https://v1.hitokoto.cn')
         .then(res => {
-            return res.json()
+          return res.json()
         })
-        .then(({hitokoto,creator}) => {
-            this.creator=creator
-            this.initTyped(hitokoto)
+        .then(({ hitokoto, creator }) => {
+          this.creator = creator
+          this.initTyped(hitokoto)
         })
     },
     initTyped(input, fn, hooks) {
@@ -85,5 +83,7 @@ export default {
     text-align:center
     font-size: 20px;
     color: #6a8bad;
-    
+
+
+ 
 </style>

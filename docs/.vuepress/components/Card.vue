@@ -8,7 +8,7 @@
           <img class="bot-img" height="33" :src="$withBase('/img/bot.png')" >
         </div>
       </div>
-    </div>
+    </div>  
   </div>
 </template>
 
