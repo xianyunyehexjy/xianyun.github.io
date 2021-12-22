@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "c4240bf56c7f0e6d6457a948d6ae40d4"
+    "revision": "df05c7824c2a5b22abb54de74959a8a8"
   },
   {
     "url": "assets/css/0.styles.f52de946.css",
@@ -46,12 +46,12 @@ self.__precacheManifest = [
     "revision": "7b1a9919e9dc24b11b8903e21afd5e5b"
   },
   {
-    "url": "assets/js/12.63262863.js",
-    "revision": "98d3be0b4e650610d20b35db71c21f5d"
+    "url": "assets/js/12.ac3cae7e.js",
+    "revision": "521f1dcbae9bfcae326a03245ead0ae0"
   },
   {
-    "url": "assets/js/13.2b240a6f.js",
-    "revision": "e02ac24c95e5743cd60cf77218eaa3e5"
+    "url": "assets/js/13.690b04f2.js",
+    "revision": "39c79133d3655e3457057a2f4de45c1e"
   },
   {
     "url": "assets/js/14.30f01e23.js",
@@ -62,7 +62,7 @@ self.__precacheManifest = [
     "revision": "f7a766c57cd03425706df0f25d235e9f"
   },
   {
-    "url": "assets/js/3.80ccd3cd.js",
+    "url": "assets/js/3.de80e23d.js",
     "revision": "6f2b0b8a0a85ca5ca0f684f333add50e"
   },
   {
@@ -90,8 +90,8 @@ self.__precacheManifest = [
     "revision": "c942347f97323df5b85ede1cc4996817"
   },
   {
-    "url": "assets/js/app.622dc65e.js",
-    "revision": "c0699aaaf1215ccc6a5a606b16d15619"
+    "url": "assets/js/app.7ec1fd02.js",
+    "revision": "e3937134c747cac52d4d03d614f350f7"
   },
   {
     "url": "css/APlayer.min.css",
@@ -123,7 +123,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "45fc7f96d2218f1ee2667cfae2a85e5b"
+    "revision": "5b3a1edb5ede93a95720fb03327fe9ec"
   },
   {
     "url": "js/APlayer.min.js",
@@ -895,15 +895,15 @@ self.__precacheManifest = [
   },
   {
     "url": "Other/index.html",
-    "revision": "d8639a2efc0ac5b2e82217c7a470772a"
+    "revision": "4ce10394be2dae57f4da48e6493d7466"
   },
   {
     "url": "Pictures/index.html",
-    "revision": "9c3e2c988b670742bc6542c2441c7276"
+    "revision": "40cc8d822272ce537c64691927408910"
   },
   {
     "url": "Vue/index.html",
-    "revision": "9698be33945e1bc9dde53666587377c9"
+    "revision": "373a5240694ffc1b178c36fbfc126be3"
   },
   {
     "url": "wallpaper/1.jpg",
@@ -959,7 +959,7 @@ self.__precacheManifest = [
   },
   {
     "url": "Year/index.html",
-    "revision": "f9f53651de64342f13a98b75462395e7"
+    "revision": "3106495c7bf42550cb155fc275e98db8"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
