@@ -18,7 +18,7 @@ const Net = (() => {
   let hostConn = null;        // 客人侧：与房主的连接
   let myId = null;
   let isHost = false;
-  let h = { msg: () => {}, join: () => {}, close: () => {}, err: () => {} };
+  let h = { msg: () => { }, join: () => { }, close: () => { }, err: () => { } };
 
   function newCode() {
     let s = "";
@@ -26,12 +26,35 @@ const Net = (() => {
     return s;
   }
 
+  const PEER_OPTIONS = {
+    host: "0.peerjs.com",
+    port: 443,
+    secure: true,
+    path: "/",
+    pingInterval: 2000,
+    debug: 0,
+    config: {
+      iceServers: [
+        { urls: "stun:stun.l.google.com:19302" },
+        { urls: "stun:stun1.l.google.com:19302" },
+      ],
+    },
+  };
+
   function newPeer(peerId) {
     return new Promise((resolve, reject) => {
-      const p = new Peer(peerId, { debug: 0 });
+      const p = new Peer(peerId, PEER_OPTIONS);
       const timer = setTimeout(() => reject(new Error("连接信令服务器超时，请检查网络")), 15000);
       p.on("open", (id) => { clearTimeout(timer); resolve(p); });
-      p.on("error", (e) => { clearTimeout(timer); reject(e); });
+      p.on("disconnected", () => { if (!p.destroyed) p.reconnect(); });
+      p.on("error", (e) => {
+        clearTimeout(timer);
+        if (e && (e.type === "network" || e.type === "disconnected")) {
+          if (!p.destroyed) p.reconnect();
+          return;
+        }
+        reject(e);
+      });
     });
   }
 
@@ -90,16 +113,16 @@ const Net = (() => {
   function send(id, msg) {
     if (isHost) {
       const c = conns.get(id);
-      if (c && c.open) { try { c.send(msg); } catch (e) {} }
+      if (c && c.open) { try { c.send(msg); } catch (e) { } }
     } else if (hostConn && hostConn.open) {
-      try { hostConn.send(msg); } catch (e) {}
+      try { hostConn.send(msg); } catch (e) { }
     }
   }
 
   function broadcast(msg, exceptId = null) {
     if (!isHost) return;
     for (const [id, c] of conns) {
-      if (id !== exceptId && c.open) { try { c.send(msg); } catch (e) {} }
+      if (id !== exceptId && c.open) { try { c.send(msg); } catch (e) { } }
     }
   }
 
@@ -112,7 +135,7 @@ const Net = (() => {
       for (const c of conns.values()) c.close();
       if (hostConn) hostConn.close();
       if (peer) peer.destroy();
-    } catch (e) {}
+    } catch (e) { }
     conns = new Map(); hostConn = null; peer = null; myId = null; isHost = false;
   }
 

@@ -26,12 +26,35 @@ const Net = (() => {
     return s;
   }
 
+  const PEER_OPTIONS = {
+    host: "0.peerjs.com",
+    port: 443,
+    secure: true,
+    path: "/",
+    pingInterval: 2000,
+    debug: 0,
+    config: {
+      iceServers: [
+        { urls: "stun:stun.l.google.com:19302" },
+        { urls: "stun:stun1.l.google.com:19302" },
+      ],
+    },
+  };
+
   function newPeer(peerId) {
     return new Promise((resolve, reject) => {
-      const p = new Peer(peerId, { debug: 0 });
+      const p = new Peer(peerId, PEER_OPTIONS);
       const timer = setTimeout(() => reject(new Error("连接信令服务器超时，请检查网络")), 15000);
       p.on("open", (id) => { clearTimeout(timer); resolve(p); });
-      p.on("error", (e) => { clearTimeout(timer); reject(e); });
+      p.on("disconnected", () => { if (!p.destroyed) p.reconnect(); });
+      p.on("error", (e) => {
+        clearTimeout(timer);
+        if (e && (e.type === "network" || e.type === "disconnected")) {
+          if (!p.destroyed) p.reconnect();
+          return;
+        }
+        reject(e);
+      });
     });
   }
 
