@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "ad711225e3c522c9f787787ae8870818"
+    "revision": "e4ec9640ae3a9bb2ab91fbce9589a05d"
   },
   {
-    "url": "assets/css/0.styles.f35dee72.css",
-    "revision": "78c37aa411d08b80c742c3ec7f939ce3"
+    "url": "assets/css/0.styles.9124004e.css",
+    "revision": "35c9eac959489dd0e8809dfc3c108f35"
   },
   {
     "url": "assets/img/search.83621669.svg",
@@ -42,8 +42,8 @@ self.__precacheManifest = [
     "revision": "6e34a6082b8bef02d4b64481686c3d28"
   },
   {
-    "url": "assets/js/11.eaca9f28.js",
-    "revision": "60be0ce08b6ae896cc0ac438310d3a73"
+    "url": "assets/js/11.8ec76e49.js",
+    "revision": "2c6a724ebd01bf409f34b785ea6326d6"
   },
   {
     "url": "assets/js/12.6acbc2a0.js",
@@ -58,8 +58,8 @@ self.__precacheManifest = [
     "revision": "fd59101e2cacfa178ff8be618c85ed75"
   },
   {
-    "url": "assets/js/15.9d6f8e84.js",
-    "revision": "c704bd39bb05acc49ff00cc7a21810ae"
+    "url": "assets/js/15.c7ae7558.js",
+    "revision": "d0e78049b4ba74e5c5035c944f21db6a"
   },
   {
     "url": "assets/js/16.e1649402.js",
@@ -82,12 +82,12 @@ self.__precacheManifest = [
     "revision": "69ec34140ba44cfa9ecfbbeb930ddf2e"
   },
   {
-    "url": "assets/js/6.facbb26f.js",
-    "revision": "3c39bb7214b67ddc6e10e3cb35a530e3"
+    "url": "assets/js/6.24764b29.js",
+    "revision": "33e3a65f254e009f0868ca2acdb7ac9e"
   },
   {
-    "url": "assets/js/7.12054149.js",
-    "revision": "4883bef57463e42c4651cce52d03c3c2"
+    "url": "assets/js/7.5bc4bd07.js",
+    "revision": "60254e6d818497b8bbbaa4f031a81e52"
   },
   {
     "url": "assets/js/8.22ed25f0.js",
@@ -98,8 +98,8 @@ self.__precacheManifest = [
     "revision": "5420172570a64f68e16acf553afe8b00"
   },
   {
-    "url": "assets/js/app.e83313b6.js",
-    "revision": "bd746a904cca3257bbb84715691fde63"
+    "url": "assets/js/app.8d439f7b.js",
+    "revision": "c670855a9c57107ddc9593ef906615b9"
   },
   {
     "url": "css/APlayer.min.css",
@@ -127,7 +127,7 @@ self.__precacheManifest = [
   },
   {
     "url": "game/index.html",
-    "revision": "505bca96f21fe75cd132980f408f6ebe"
+    "revision": "8df0792fc43baf60d4dde797437768fb"
   },
   {
     "url": "img/bot.png",
@@ -155,7 +155,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "10f4d68ccee571387f2339cb4245f8ad"
+    "revision": "6517c75c720f25866c62108f3eabdc87"
   },
   {
     "url": "js/APlayer.min.js",
@@ -927,15 +927,15 @@ self.__precacheManifest = [
   },
   {
     "url": "Other/index.html",
-    "revision": "e52583e73fa6387631c7e6b9b3d35947"
+    "revision": "4dd6aec3fc810f46f0e32cb5a3dc82fc"
   },
   {
     "url": "Pictures/index.html",
-    "revision": "1528789183f34079c6aa03fe0e9cdf94"
+    "revision": "44f7b6709dc724249d6d87cc70cc3255"
   },
   {
     "url": "Vue/index.html",
-    "revision": "b7dc724a0809e350555d974c1b08ad88"
+    "revision": "7e99afadd7ce9cd570b9d38840ca331e"
   },
   {
     "url": "wallpaper/1.jpg",
@@ -991,7 +991,7 @@ self.__precacheManifest = [
   },
   {
     "url": "Year/index.html",
-    "revision": "d98e3072f1cc1e0777c398d7dfddface"
+    "revision": "266068b6af75db014e163c8e72c54c85"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
