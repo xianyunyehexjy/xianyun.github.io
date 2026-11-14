@@ -26,36 +26,62 @@ const Net = (() => {
     return s;
   }
 
-  const PEER_OPTIONS = {
-    host: "0.peerjs.com",
-    port: 443,
-    secure: true,
-    path: "/",
-    pingInterval: 2000,
-    debug: 0,
-    config: {
-      iceServers: [
-        { urls: "stun:stun.l.google.com:19302" },
-        { urls: "stun:stun1.l.google.com:19302" },
-      ],
-    },
-  };
+  const PEER_SERVER_CANDIDATES = [
+    { host: "peerjs.com", port: 443, secure: true, path: "/" },
+    { host: "0.peerjs.com", port: 443, secure: true, path: "/" },
+  ];
 
-  function newPeer(peerId) {
+  function buildPeerOptions(server) {
+    return {
+      ...server,
+      pingInterval: 2000,
+      debug: 0,
+      config: {
+        iceServers: [
+          { urls: "stun:stun.l.google.com:19302" },
+          { urls: "stun:stun1.l.google.com:19302" },
+        ],
+      },
+    };
+  }
+
+  function createPeer(peerId, options) {
     return new Promise((resolve, reject) => {
-      const p = new Peer(peerId, PEER_OPTIONS);
-      const timer = setTimeout(() => reject(new Error("连接信令服务器超时，请检查网络")), 15000);
-      p.on("open", (id) => { clearTimeout(timer); resolve(p); });
+      const p = new Peer(peerId, options);
+      const timer = setTimeout(() => {
+        try { p.destroy(); } catch (e) { }
+        reject(new Error("连接信令服务器超时，请检查网络环境或稍后再试"));
+      }, 15000);
+
+      const fail = (e) => {
+        clearTimeout(timer);
+        try { p.destroy(); } catch (err) { }
+        reject(e || new Error("PeerJS 连接失败"));
+      };
+
+      p.on("open", () => { clearTimeout(timer); resolve(p); });
       p.on("disconnected", () => { if (!p.destroyed) p.reconnect(); });
       p.on("error", (e) => {
-        clearTimeout(timer);
-        if (e && (e.type === "network" || e.type === "disconnected")) {
-          if (!p.destroyed) p.reconnect();
+        if (e && (e.type === "network" || e.type === "disconnected" || e.type === "server-error")) {
+          fail(new Error("Lost connection to server. 请检查网络，或稍后重试。"));
           return;
         }
-        reject(e);
+        fail(e);
       });
     });
+  }
+
+  async function newPeer(peerId) {
+    let lastErr = null;
+    for (const server of PEER_SERVER_CANDIDATES) {
+      try {
+        return await createPeer(peerId, buildPeerOptions(server));
+      } catch (e) {
+        lastErr = e;
+        console.warn("[PeerJS] 备用信令服务器失败", server.host, e);
+      }
+    }
+    throw lastErr || new Error("PeerJS 信令服务器不可用");
   }
 
   /* ---------------- 房主 ---------------- */
