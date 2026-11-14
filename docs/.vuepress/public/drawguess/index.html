@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>你画我猜 · P2P 联机版</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- 主菜单 -->
+  <section id="screen-menu" class="screen">
+    <div class="menu-box">
+      <h1>🎨 你画我猜</h1>
+      <p class="sub">P2P 免服务器联机版 · WebRTC 直连</p>
+      <div class="card">
+        <label class="lbl">你的昵称</label>
+        <input id="nick" maxlength="10" placeholder="例如：小明">
+        <button id="btn-create" class="btn primary big">🎮 创建房间</button>
+        <div class="divider"><span>或加入好友的房间</span></div>
+        <div class="join-row">
+          <input id="code" maxlength="6" placeholder="房间号" autocomplete="off">
+          <button id="btn-join" class="btn">加入</button>
+        </div>
+        <p id="menu-msg" class="msg"></p>
+        <p class="tip">创建房间后会生成 6 位房间号，发给好友即可加入。<br>无需注册、无需自己架服务器。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 游戏界面 -->
+  <section id="screen-game" class="screen hidden">
+    <header id="topbar">
+      <div class="room-info">房间号 <b id="room-code">------</b>
+        <button id="btn-copy" class="btn tiny" title="复制房间号">复制</button>
+      </div>
+      <div id="round-info"></div>
+      <div id="timer" class="timer hidden">--</div>
+      <button id="btn-exit" class="btn tiny ghost">退出</button>
+    </header>
+
+    <main id="layout">
+      <aside id="players" class="panel"></aside>
+
+      <div class="center">
+        <div id="word-bar">等待开始…</div>
+        <div class="canvas-wrap">
+          <canvas id="board" width="1000" height="750"></canvas>
+          <div id="overlay" class="hidden"></div>
+        </div>
+        <div id="toolbar">
+          <div class="swatches" id="swatches"></div>
+          <div class="sizes" id="sizes"></div>
+          <button id="btn-eraser" class="tool" title="橡皮擦">🧽</button>
+          <button id="btn-undo" class="tool" title="撤销">↩️</button>
+          <button id="btn-clear" class="tool" title="清空">🗑️</button>
+        </div>
+      </div>
+
+      <aside id="chat" class="panel">
+        <div id="chat-log"></div>
+        <form id="chat-form" autocomplete="off">
+          <input id="chat-input" maxlength="60" placeholder="在这里输入你的猜测…">
+          <button class="btn" type="submit">发送</button>
+        </form>
+      </aside>
+    </main>
+  </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.4/dist/peerjs.min.js"></script>
+<script src="js/words.js"></script>
+<script src="js/net.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,2 +1,9 @@
 node_modules/
 key/
+
+# 本地开发用的游戏独立副本（正式集成版本位于 docs/.vuepress/public/drawguess/）
+/index.html
+/README.md
+/css/
+/js/
+/server.js

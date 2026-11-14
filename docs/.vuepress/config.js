@@ -40,6 +40,7 @@ module.exports = {
 			},
 			{ text: '图集', link: '/Pictures/' },
 			{ text: '新年快乐', link: '/Year/' },
+			{ text: '小游戏', link: '/game/' },
 			{ text: 'GitHub', link: 'https://github.com/xianyunyehexjy' },
 		],
 		sidebar: 'auto', // 侧边栏配置
