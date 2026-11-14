@@ -21,7 +21,7 @@ module.exports = {
 		], //引入live2d初始化脚本,async:'async'
 		['script', { type: 'text/javascript', src: '/js/APlayer.min.js' }],
 	],
-	base: '/', // GitHub Pages 个人站点使用根路径，避免 /xianyun.github.io/ 子路径导致导航和页面 404
+	base: '/xianyun.github.io/', // GitHub Pages 项目站点需要带仓库名前缀
 	markdown: {
 		lineNumbers: false, // 代码块显示行号
 	},
